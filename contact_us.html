@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>Form Contact Us</title>
+</head>
+<body>
+    <a href="index.html"><span class="fas fa-home"></span></a>
+    <div class="container">
+        <form>
+            <div class="row">
+                <div class="fcol">
+                    <label for="name">Nama Lengkap</label>
+                </div>
+                <div class="scol">
+                    <input type="text" id="name" name="name" placeholder="Nama Lengkap Anda">
+                </div>
+            </div>
+            <div class="row">
+                <div class="fcol">
+                    <label for="email">E-mail</label>
+                </div>
+                <div class="scol">
+                    <input type="email" id="email" name="email" placeholder="E-mail Anda">
+                </div>
+            </div>
+            <div class="row">
+                <div class="fcol">
+                    <label for="username">Username</label>
+                </div>
+                <div class="scol">
+                    <input type="text" id="username" name="username" placeholder="Username Anda">
+                </div>
+            </div>
+            <div class="row">
+                <div class="fcol">
+                    <label for="pass">Password</label>
+                </div>
+                <div class="scol">
+                    <input type="password" id="pass" name="pass" placeholder="Password Anda">
+                </div>
+            </div>
+            <div class="row">
+                <div class="fcol">
+                    <label for="kelamin">Jenis Kelamin</label>
+                </div>
+                <div class="scol">
+                    <input type="radio" id="laki" name="kelamin" value="laki">
+                    <label for="laki">Laki-laki</label>
+                    <input type="radio" id="perempuan" name="kelamin" value="perempuan">
+                    <label for="perempuan">Perempuan</label> 
+                </div>
+            </div>
+            <div class="row">
+                <div class="fcol">
+                    <label for="agama">Agama</label>
+                </div>
+                <div class="scol">
+                    <select>
+                        <option id="agama" value="kristen">Kristen Protestan</option>
+                        <option id="agama" value="islam">Islam</option>
+                        <option id="agama" value="katolik">Katolik</option>
+                        <option id="agama" value="konghucu">Konghucu</option>
+                        <option id="agama" value="hindu">Hindu</option>
+                        <option id="agama" value="buddha">Buddha</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="fcol">
+                    <label for="alamat">Alamat</label>
+                </div>
+                <div class="scol">
+                    <textarea placeholder="Masukkan alamat lengkap" name="alamat"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="fcol">
+                    <label for="hobby">Hobby</label>
+                </div>
+                <div class="scol">
+                    <input type="checkbox" name="hobby" value="belajar">
+                    <label for="belajar">Belajar</label>
+                    <input type="checkbox" name="hobby" value="bermusik">
+                    <label for="bermusik">Bermusik</label>
+                    <input type="checkbox" name="hobby" value="olahraga">
+                    <label for="olahraga">Olahraga</label>
+                    <input type="checkbox" name="hobby" value="bernyanyi">
+                    <label for="bernyanyi">Bernyanyi</label>
+                </div>
+            </div>
+            <div class="row">
+                <input type="submit" value="Simpan">
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>
