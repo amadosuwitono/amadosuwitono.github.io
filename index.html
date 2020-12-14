@@ -3,223 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="mainstyle.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <title>3SECOND Original Official Website | www.3second.co.id</title>
+    <link rel="stylesheet" href="mainstyle.css">
+    <script src="mainjs.js"></script>
+    <title>3second</title>
 </head>
+<header>
+    <nav class="navbar navbar-expand top-head container-fluid" id="head-top">
+        <ul class="navbar-nav" style="width: 100%;">
+            <li class="nav-item top-logo active" style="overflow: inherit;">
+                <a href="index.html" class="nav-link"><img src="logo-3second.png" height="30"></a>
+            </li>
+            <li class="nav-item top-logo">
+                <a href="greenlight.html" class="nav-link"><img src="logo-greenlight.png" height="15"></a>
+            </li>
+            <li class="nav-item top-logo">
+                <a href="moutley.html" class="nav-link"><img src="logo-moutley.png" height="20"></a>
+            </li>
+            <li class="nav-item top-logo">
+                <a href="#" class="nav-link"><img src="logo-famo-casual.png" height="20"></a>
+            </li>
+            <li class="nav-item top-logo">
+                <a href="#" class="nav-link"><img src="logo-fmc.png" height="20"></a>
+            </li>
+            <li class="nav-item top-logo">
+                <a href="#" class="nav-link"><img src="hanna.png" height="20"></a>
+            </li>
+        </ul>
+        <ul class="navbar-nav justify-content-end">
+            <a href="#"><li class="nav-item item">
+                <span class="fas fa-shopping-cart"></span> (0) items <span class="fas fa-caret-down"></span>
+                <div class="isiItem">
+                    <a href="#"></a><p>Isi bag anda masih kosong.</p></a>
+                </div>
+            </li></a>
+        </ul>
+    </nav>
+    <div id="mySideBar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+    </div>
+    <div class="container-fluid justify-content-center midBar" style="font-weight: bolder; height: 80px;" id="head-bot">
+        <div class="row">
+            <script>
+                var mediaQuery = window.matchMedia('(max-width: 680px)');
+                writeOpenBtn(mediaQuery);
+            </script>
+            <div class="col-md-2">
+                <img class="img-fluid" src="logo-3second.png" style="padding-right: 2em; min-height: 30px;">
+            </div>
+            <div class="col-md-1 gend">
+                <p>MEN<span class="fas fa-caret-down" style="color: red;"></span></p>
+            </div>
+            <div class="col-md-1 gend">
+                LADIES<span class="fas fa-caret-down" style="color: red;"></span>
+            </div>
+            <div class="col-md-1 gend">
+                KIDS<span class="fas fa-caret-down" style="color: red;"></span>
+            </div>
+        </div>
+    </div>
+</header>
 <body>
-    <div class="navbar1">
-        <span class="logo1 active"><img src="logo-3second.png"></span>
-        <span class="logo"><a href="greenlight.html"><img src="logo-greenlight.png" style="margin-top: 12%;"></a></span>
-        <span class="logo"><a href="moutley.html"><img src="logo-moutley.png" style="height: 30px; width: auto; margin-top: 5%;"></a></span>
-        <span class="logo"><a href="#"><img src="logo-famo-casual.png" style="margin-top: 12%;"></a></span>
-        <span class="logo"><a href="#"><img src="logo-fmc.png" style="height: 25px; margin-top: 10%;"></a></span>
-        <span class="logo"><a href="#"><img src="hanna.png"></a></span>
-        <div class="item"><span class="fas fa-shopping-cart"><a href="#">(0)items</a></span>
-            <div class="isiItem">Isi bag anda masih kosong</div>
-        </div>
-    </div>
-    <div class="navbar2">
-        <div class="biglogo"><img src="logo-3second.png"></div>
-        <div class="category">MEN <span class="fas fa-caret-down"></span>
-
-        </div>
-        <div class="category">LADIES <span class="fas fa-caret-down"></span>
-
-        </div>
-        <div class="category">KIDS <span class="fas fa-caret-down"></span>
-
-        </div>
-        <div class="category">SALE</div>
-        <div class="search">
-                <div class="ftext">
-                    <input type="text" id="search" name="search" placeholder="Search Product.." disabled>
-                </div>
-                <a href="index.html"><span class="fas fa-search sbut"></span></a> <!--Index-->
-            </form>
-        </div>
-        <a href="biodata.html">
-            <div class="bio">
-                <span class="fas fa-user"></span>
-                <div class="user">Biodata<br>Amado
-                </div>
-            </div>
-        </a>
-    </div>
-    <div class="slideshow-container">
-        <div class="pic">
-          <img src="masker-3sc.jpg" style="width:100%">
-        </div>
-    </div>
-    <a href="contact_us.html">
-    <div class="contact">
-        <p>Contact Us</p>
-        <span class="fas fa-comment-alt icontact"></span>
-    </div>
-    </a>
-    <div class="batas">
-        <div class="garisbatas">
-            <hr>
-        </div>
-        <div class="isibatas">
-            <div class="kotakbatas">
-                BELANJA BERDASARKAN PRODUK
-            </div>
-        </div>
-        <div class="garisbatas">
-            <hr>
-        </div>
-    </div>
-    <p id="yo">Find your own favorite items easily. Let's get into it!</p>
-    <div class="produk">
-        <a href="#">
-            <div class="produkbox">
-                <img src="kids.jpg">
-                <div class="minibox">
-                    KIDS
-                </div>
-            </div>
-        </a>
-        <a href="#">
-            <div class="produkbox">
-                <img src="men.jpg">
-                <div class="minibox">
-                    MEN
-                </div>
-            </div>
-        </a>
-        <a href="#">
-            <div class="produkbox">
-                <img src="ladies.jpg">
-                <div class="minibox">
-                    LADIES
-                </div>
-            </div>
-        </a>
-        <a href="#">
-        <div class="produkbox">
-            <img src="shoes.jpg">
-            <div class="minibox">
-                SHOES
-            </div>
-        </div>
-        </a>
-    </div>
-    <div class="boxnews">
-        <div class="row1">
-            <div class="col1">
-                STYLE UPDATE<br>
-                <p id="bigfont">NEWS&STORY</p>
-            </div>
-            <div class="col1">
-                INSPIRING VIDEOS<br>
-                <p id="bigfont">VIDEO UPDATE</p>
-            </div>
-            <div class="col1">
-                TREND'S INSIGHT<br>
-                <p id="bigfont">LOOKBOOK</p>
-            </div>
-        </div>
-        <div class="row2">
-            <div class="col2">
-                <img src="news.jpeg">
-                <div class="date">
-                    23<p>SEP</p>
-                </div>
-            </div>
-            <div class="col2">
-                <img src="videos.jpg">
-                <div class="date">
-                    02<p>MAY</p>
-                </div>
-            </div>
-            <div class="col2">
-                <img src="lookbook.jpg">
-                <div class="date">
-                    26<p>AUG</p>
-                </div>
-            </div>
-        </div>
-        <div class="row3">
-            <div class="col3">
-                <a href="#">
-                    5 Cara Mudah Padupadan Celana Jeans Agar Tidak Membosankan
-                </a>
-                <a href="#" class="red">
-                    <br>
-                    <span class="fas fa-caret-right"></span>
-                    Read more
-                </a>
-            </div>
-            <div class="col3">
-                <a href="#">
-                    3Second & Moutley Kids
-                </a><br>
-                <p>Tampil cute dan keren dengan 3Second dan Moutley Kids. . Koleksi 3Second & Moutley Kids kini sudah bisa didapatkan di 3Second Store terdekat di Kota kamu atau di www.3second.co.id</p>
-                <a href="#" class="red">
-                    <span class="fas fa-caret-right"></span>
-                    Read more
-                </a>
-            </div>
-            <div class="col3">
-                <a href="#">
-                    Here they are! Welcome to 3Second, @alghazali7 & @rizkynazar20
-                </a>
-                <a href="#" class="red">
-                    <br>
-                    <span class="fas fa-caret-right"></span>
-                    Read more
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="footer1">
-        <div class="langgananbox">
-            <div class="langganan" style="margin-top: 5px;">
-                BERLANGGANAN NEWSLETTER
-            </div>
-            <div class="langganan">
-            <input type="email" name="email" placeholder="Enter your email address">
-            </div>
-            <div class="langganan" style="margin-left: 5%;">
-                <a href="#" style="background-color: black;">PRIA</a>
-                <a href="#" style="background-color: red ;">WANITA</a>
-            </div>
-        </div>
-    </div>
-    <div class="footer2">
-        <div class="footer2box">
-            <div class="fbox1">
-                <p>INFORMASI</p>
-                <a href="#"><p>Aturan Pengguna</p></a>
-                <a href="#"><p>Kebijakan Privacy</p></a>
-                <a href="#"><p>Kebijakan Hak Cipta</p></a>
-                <a href="#"><p>Syarat & Ketentuan Berlaku</p></a>
-                <a href="#"><p>Lokasi Toko</p></a>
-                <a href="#"><p>Karir di 3Second</p></a>
-            </div>
-            <div class="fbox1">
-                <p>BANTUAN</p>
-                <a href="#"><p>Cara Berbelanja</p></a>
-                <a href="#"><p>Panduan Ukuran</p></a>
-                <a href="#"><p>Pertanyaan Umum</p></a>
-                <a href="#"><p>Ketentuan & Cek Pengiriman</p></a>
-                <a href="#"><p>Retur & Pengembalian Dana</p></a>
-            </div>
-            <div class="fbox1" style="width: 26%; font-weight: lighter;">
-                <p style="font-weight: bold;">CUSTOMER SERVICE</p>
-                <span class="fas fa-headset" style="margin-right: 2%;"></span>09.00 - 17.00 (Senin - Minggu)
-                <a href="#"><p>081312063333</p></a>
-                <p style="font-weight: bold;">Email</p>
-                <a href="#"><p>help@3second.co.id</p></a>
-            </div>
-            <div class="fbox1" style="width: 35%;">
-                <img src="las.PNG">
-            </div>
-        </div>
-    </div>
-    <div class="footer3">
-        All Rights Reserved © 2020 3second.Co.id
-    </div>
+    
 </body>
 </html>
