@@ -60,6 +60,7 @@
 .midBar{
     padding: 1em 8em;
     box-shadow: 0px 2px 10px #ccc;
+    z-index: -1;
 }
 
 .gend{
@@ -67,59 +68,85 @@
     font-size: 1vw;
 }
 
-/* Side bar style */
-.sidebar {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    overflow-x: hidden;
-    padding-top: 60px;
-    transition: 0.5s;
-  }
+.form-control:focus {
+    border-color: inherit;
+    box-shadow: none;
+}
+.carousel{
+    z-index: -4;
+}
 
-  .sidebar a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-  }
-  
-  .sidebar a:hover {
-    color: #f1f1f1;
-  }
-  
-  /* posisi x butt */
-  .sidebar .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-  }
-  
-  /* open butt */
-  .openbtn {
-    font-size: 20px;
-    cursor: pointer;
-    color: #ccc;
+.carousel-inner{
+    max-height: 32em;
+    margin-bottom: 2em;
+}
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+}
+
+.boxb{
     background-color: white;
-    padding: 10px 15px;
-    border: none;
-  }
-  
-  .openbtn:focus{
-      outline: none;
-  }
+    border: 2px solid black;
+    overflow: visible;
+}
 
-  .openbtn:hover {
+.boxf{
+    background-color: white;
+    border: 2px solid red;
+}
+
+.item-box{
+    border: 7px solid #ccc;
+    height: auto;
+    width: 98%;
+    overflow: hidden;
+}
+
+.item-box img{
+    height: 100%;
+    width: 100%;
+}
+.item-box img:hover{
+    opacity: 0.5;
+}
+
+.ident{
     color: black;
-  }
+    background-color: white;
+    position: absolute;
+    bottom: -20px;
+    font-weight: bolder;
+    font-size: large;
+    width: 80%;
+    padding: 0.5em 0;
+    text-align: center;
+}
+.ident:hover{
+    bottom: 10px;
+    transition: 0.5s;
+    background-color: rgba(255, 255, 255, 0.7);
+}
 
+.tbox{
+    padding: 1em;
+    color: red;
+    border-bottom: 0.5px solid #ccc;
+}
+
+.big{
+    color: black;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+.tbox .item-box{
+    height: 23em;
+}
+
+.tbox .item-box img:hover{
+    opacity: 1;
+}
 
 @media screen and (max-width: 1300px){
     .navbar{
@@ -152,14 +179,11 @@
     }
     .midBar{
         padding: 1.2em;
+        padding-top: 0;
+    }
+    .logomidbar{
+        text-align: center;
     }
     .gend{
         display: none;
     }
-    #head-top{
-        transition: 0.5s;
-    }
-    #head-bot{
-        transition: 0.5s;
-    }
-}
