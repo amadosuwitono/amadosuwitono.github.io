@@ -7,37 +7,185 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link rel="stylesheet" href="mainstyle.css">
-    <title>3second</title>
+    <link rel="stylesheet" href="moutley.css">
+    <script src="mainjs.js"></script>
+    <title>Moutley</title>
 </head>
 <header>
-    <nav class="navbar navbar-expand top-head container-fluid">
-        <ul class="navbar-nav">
-            <li class="nav-item" style="overflow: inherit;">
+    <nav class="navbar navbar-expand top-head container-fluid" id="headtop">
+        <ul class="navbar-nav" style="width: 100%;">
+            <li class="nav-item top-logo">
                 <a href="index.html" class="nav-link"><img src="logo-3second.png" height="30"></a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item top-logo">
                 <a href="greenlight.html" class="nav-link"><img src="logo-greenlight.png" height="15"></a>
             </li>
-            <li class="nav-item active">
+            <li class="nav-item top-logo active">
                 <a href="moutley.html" class="nav-link"><img src="logo-moutley.png" height="20"></a>
             </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link"><img src="logo-famo-casual.png" height="20"></a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link"><img src="logo-fmc.png" height="20"></a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link"><img src="hanna.png" height="20"></a>
+            <li class="nav-item top-logo">
+                <a href="profile.html" class="nav-link"><img src="profile.png" height="20"></a>
             </li>
         </ul>
+        <ul class="navbar-nav justify-content-end">
+            <a href="#"><li class="nav-item item">
+                <span class="fas fa-shopping-cart"></span> (0) items <span class="fas fa-caret-down"></span>
+                <div class="isiItem">
+                    <a href="#"></a><p>Isi bag anda masih kosong.</p></a>
+                </div>
+            </li></a>
+        </ul>
     </nav>
-    <div class="jumbotron">
-
+    <div class="navbar navbar-expand pt-3 midBar" style="font-weight: bolder; height: 79px; background-color: white !important;" id="headbot">
+        <ul class="navbar-nav" style="width: 80%;">
+            <li class="nav-logo logomidbar">
+                <a href="#"><img class="img-fluid pr-1 mt-2" src="logo-moutley.png" style="min-height: 30px;"></a>
+            </li>
+            <li class="nav-link ml-3 gend">
+                <p>MEN <span class="fas fa-caret-down" style="color: red;"></span></p>
+            </li>
+            <li class="nav-link ml-3 gend">
+                MOUTLEY KIDS <span class="fas fa-caret-down" style="color: red;"></span>
+            </li>
+        </ul>
+        <ul class="navbar-nav" style="width: 20%;">
+            <li class="nav-item">
+                <div class="input-group input-group-sm">
+                    <input class="form-control" type="text" placeholder="Search Product..">
+                    <div class="input-group-append">
+                        <span class="input-group-text" id="basic-text1"><i class="fas fa-search text-grey"
+                            aria-hidden="true"></i></span>
+                    </div>
+                </div>
+            </li>
+        </ul>
     </div>
 </header>
 <body>
-    
+    <div id="boximg" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+          <li data-target="#boximg" data-slide-to="0" class="active"></li>
+          <li data-target="#boximg" data-slide-to="1"></li>
+          <li data-target="#boximg" data-slide-to="2"></li>
+        </ul>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="banner_kids.jpg" alt="T-shirt">
+          </div>
+          <div class="carousel-item">
+            <img src="banner_tshirt.jpg" alt="Shoes">
+          </div>
+          <div class="carousel-item">
+            <img src="home-banner-moutley.jpg" alt="Shoes">
+          </div>
+        </div>
+    </div>
+    <div class="container-md">
+        <div class="row pb-5">
+            <div class="col-md text-center mt-5" style="font-size: x-large;font-weight: 900;">
+                BEST ITEMS
+            </div>
+        </div>
+        <div class="row text-center pb-4 justify-content-between" style="font-size: smaller;">
+            <div class="col-md">
+                <img src="m1.jpg">
+                MOUTLEY MEN JACKET 111220
+                <p class="font-weight-bold mt-2">Rp. 299.500</p>
+                <button type="button" class="btn" style="background-color: #85af30;color: white;">BELI</button>
+            </div>
+            <div class="col-md">
+                <img src="m2.jpg">
+                MOUTLEY MEN JACKET 041220
+                <p class="font-weight-bold mt-2">Rp. 379.500</p>
+                <button type="button" class="btn" style="background-color: #85af30;color: white;">BELI</button>
+            </div>
+            <div class="col-md">
+                <img src="m3.jpg">
+                MOUTLEY MEN T-SHIRT 110920
+                <p class="font-weight-bold mt-2">Rp. 164.500</p>
+                <button type="button" class="btn" style="background-color: #85af30;color: white;">BELI</button>
+            </div>
+            <div class="col-md">
+                <img src="m4.jpg">
+                MOUTLEY MEN T-SHIRT 061220
+                <p class="font-weight-bold mt-2">Rp. 159.500</p>
+                <button type="button" class="btn" style="background-color: #85af30;color: white;">BELI</button>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="container-fluid mt-5" style="background-color: #ccc;">
+        <div class="row justify-content-center pt-5">
+            <div class="col-md text-right">
+                <iframe src="https://youtu.be/E39xRGlU6s4" style="width: 80%;height: auto;"></iframe>
+            </div>
+            <div class="col-md text-center">
+                <iframe src="https://youtu.be/c1MrZhlhl-U" style="width: 80%; height: auto;"></iframe>
+            </div>
+            <div class="col-md text-left">
+                <iframe src="https://youtu.be/7gk_5xQWcn8" style="width: 80%; height: auto;"></iframe>
+            </div>
+        </div>
+        <div class="row p-4 justify-content-center">
+            <div class="col-md-3">
+                <h5 class="pt-4 ">REGISTER TO GET UPDATE</h5>
+            </div>
+            <div class="col-md-5">
+                <div class="input-group mt-4">
+                    <input class="form-control" type="email" placeholder="Enter your email address..">
+                    <div class="input-group-append">
+                        <span class="input-group-text font-weight-bolder" style="padding: 0 4em; background-color: #f8b901; color: white;">DAFTAR</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="contact_us.html">
+        <div class="contact">
+            <p>Contact Us</p>
+            <span class="fas fa-comment-alt icontact"></span>
+        </div>
+    </a>
 </body>
+<footer>
+    <div class="container-fluid" style="background-color: black;">
+        <div class="row pt-5 w-75 text-white" style="margin-left: 12.5%;">
+            <div class="col-md">
+                <p>INFORMASI</p>
+                <a href="#" class="text-light font-weight-light"><p>Aturan Pengguna</p></a>
+                <a href="#" class="text-light font-weight-light"><p>Kebijakan Privacy</p></a>
+                <a href="#" class="text-light font-weight-light"><p>Kebijakan Hak Cipta</p></a>
+                <a href="#" class="text-light font-weight-light"><p>Syarat & Ketentuan Berlaku</p></a>
+                <a href="#" class="text-light font-weight-light"><p>Lokasi Toko</p></a>
+                <a href="#" class="text-light font-weight-light"><p>Karir di 3Second</p></a>
+            </div>
+            <div class="col-md">
+                <p>BANTUAN</p>
+                <a href="#" class="text-light font-weight-light"><p>Cara Berbelanja</p></a>
+                <a href="#" class="text-light font-weight-light"><p>Panduan Ukuran</p></a>
+                <a href="#" class="text-light font-weight-light"><p>Pertanyaan Umum</p></a>
+                <a href="#" class="text-light font-weight-light"><p>Ketentuan & Cek Pengiriman</p></a>
+                <a href="#" class="text-light font-weight-light"><p>Retur & Pengembalian Dana</p></a>
+            </div>
+            <div class="col-md">
+                <p style="font-weight: bold;">CUSTOMER SERVICE</p>
+                <span class="fas fa-headset" style="margin-right: 2%;"></span>09.00 - 17.00 (Senin - Minggu)
+                <a href="#" class="text-light font-weight-light"><p>081312063333</p></a>
+                <p style="font-weight: bold;">Email</p>
+                <a href="#" class="text-light font-weight-light"><p>help@3second.co.id</p></a>
+            </div>
+            <div class="col-md">
+                <img src="las.PNG" class="img-fluid">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md text-dark font-weight-light text-center p-2" style="background-color: #ccc;">
+                All Rights Reserved © 2020 3second.Co.id
+            </div>
+        </div>
+    </div>
+</footer>
 </html>
