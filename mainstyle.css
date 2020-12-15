@@ -148,6 +148,26 @@
     opacity: 1;
 }
 
+.contact p{
+    position: fixed;
+    right: 2.3%;
+    bottom: 5%;
+    font-size: 15px;
+    z-index: 2;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+
+.icontact{
+    position: fixed;
+    right: 2%;
+    bottom: 2%;
+    font-size: 75px;
+    color: #e65749;
+    z-index: 1;
+}
+
 @media screen and (max-width: 1300px){
     .navbar{
         padding-left: 3%;
