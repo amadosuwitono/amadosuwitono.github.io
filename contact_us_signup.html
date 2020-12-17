@@ -26,7 +26,7 @@
                 <a href="moutley.html" class="nav-link"><img src="logo-moutley.png" height="20"></a>
             </li>
             <li class="nav-item top-logo">
-                <a href="profile.html" class="nav-link"><img src="profile.png" height="20"></a>
+                <a href="biodata.html" class="nav-link"><img src="profile.png" height="20"></a>
             </li>
         </ul>
     </nav>
@@ -44,6 +44,18 @@
 <body>
     <div class="container pt-5 pb-5" style="min-height: 25em;">
         <form class="needs-validation">
+            <div class="form-group">
+              <label for="uname">Nama Lengkap:</label>
+              <input type="text" class="form-control" id="nl" placeholder="Enter name" name="nl" required>
+              <div class="valid-feedback">Valid.</div>
+              <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+            <div class="form-group">
+              <label for="uname">Email:</label>
+              <input type="text" class="form-control" id="email" placeholder="Enter Email" name="email" required>
+              <div class="valid-feedback">Valid.</div>
+              <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
             <div class="form-group">
               <label for="uname">Username:</label>
               <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
@@ -71,11 +83,48 @@
                 <div class="invalid-feedback">Please fill out this field.</div>
             </div>
             <div class="form-group">
+                <label for="sel1">Agama:</label>
+                <select class="form-control" id="sel1" required>
+                  <option>Kristen Protestan</option>
+                  <option>Islam</option>
+                  <option>Katolik</option>
+                  <option>Buddha</option>
+                  <option>Hindu</option>
+                  <option>Kong Hu Chu</option>
+                </select>
+              </div>
+            <div class="form-group">
                 <label for="example-date-input">Date:</label>
                 <input class="form-control" type="date" id="example-date-input" required>
                 <div class="valid-feedback">Valid.</div>
                 <div class="invalid-feedback">Please fill out this field.</div>
             </div>
+            <div class="form-group">
+                <label for="comment">Alamat:</label>
+                <textarea class="form-control" rows="5" id="comment" required></textarea>
+            </div>
+            <label>Hobby:</label><br>
+            <div class="form-check-inline mb-3">
+                <label class="form-check-label">
+                  <input type="checkbox" class="form-check-input" value="musik">Main Musik
+                </label>
+            </div>
+            <div class="form-check-inline">
+                <label class="form-check-label">
+                  <input type="checkbox" class="form-check-input" value="olahraga">Olahraga
+                </label>
+            </div>
+            <div class="form-check-inline">
+                <label class="form-check-label">
+                  <input type="checkbox" class="form-check-input" value="traveling">Traveling
+                </label>
+            </div>
+            <div class="form-check-inline">
+                <label class="form-check-label">
+                  <input type="checkbox" class="form-check-input" value="lain">Lainnya..
+                </label>
+            </div>
+            <br>
             <button type="submit" class="btn" style="background-color: #e65749; color: white;">Submit</button>
         </form>
         <a href="contact_us.html"><button type="submit" class="btn mt-5" style="background-color: #e65749; color: white;">Back</button></a>
